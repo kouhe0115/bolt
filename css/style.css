@@ -25,8 +25,17 @@ a{
   text-align: center;
 }
 
+.main__title br{
+  display: none;
+}
+
+.main__text br{
+  display: none;
+}
+
 /* common end */
 
+/* pc */
 .header{
   width: 100%;
   position: fixed;
@@ -120,7 +129,7 @@ a{
   width: 800px;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 80px 100px;
 }
 
@@ -136,7 +145,7 @@ a{
 }
 
 .article__inner{
-  padding: 60px 0 70px;
+  padding: 60px 0 87px;
 }
 
 .article__content{
@@ -151,7 +160,7 @@ a{
   font-size: 14px;
 }
 
-.article_btn{
+.article__btn{
   height: 10px;
   line-height: 10px;
   margin-left: 90px;
@@ -159,6 +168,8 @@ a{
 
 .section2{
   width: 100%;
+  padding: 70px 0 100px;
+  text-align: center;
   background-color: #4e4e4e;
 }
 
@@ -174,16 +185,6 @@ a{
 
 .section__img:first-child{
   margin-left: 0;
-}
-
-.section2{
-  text-align: center;
-  padding: 70px 0 100px;
-}
-
-.section2__inner{
-  width: 1100px;
-  margin: auto;
 }
 
 .skill__text{
@@ -226,5 +227,128 @@ a{
 }
 
 
+/* pc end */
+
+/* tablet */
+
+@media(max-width: 1199px){
+
+  .main__content{
+    background-color: red;
+  }
+
+  .inner{
+    width: 97%;
+  }
+
+  .section__inner{
+    padding: 50px 0 25px 0;
+    display: block;
+  }
+  
+  .section__content{
+    margin: 0;
+    padding-top: 20x;
+  }
+  
+  .section__text{
+    margin: auto;
+  }
+  
+  .article__imgs{
+    display: block;
+    width: 100%;
+  }
+
+  .article__img{
+    margin: auto;
+  }
+
+  .article__img:nth-child(3){
+    margin-bottom: 80px;
+  }
+
+  .article__content{
+    display: block;
+  }
+
+  .article__text{
+    width: 100%;
+    margin-bottom: 57px;
+  }
+
+  .article__btn{
+    margin-left: 0px;
+    margin-bottom: 87px;
+  }
+
+  .section__imgs{
+    display: block;
+    width: 100%;
+  }
+
+  .section__img{
+    margin-left: 0px;
+    margin-bottom: 88px;
+  }
+  
+  .section__img:last-child{
+    margin-bottom: 0;
+  }
+}
 
 
+/* smart phone */
+@media(max-width: 767px){
+  .main__content{
+    background-color: pink;
+  }
+
+  .main__inner{
+    padding:  160px 0 130px 0 ;
+  }
+
+  .main__title{
+    margin: auto;
+    font-size: 80px;
+  }
+
+  .main__text{
+    margin: 20px auto 0;
+    font-size: 30px;
+  }
+
+  .main__title br {
+    display: block;
+  }
+
+  .main__text br {
+    display: block;
+  }
+  
+  .section__text{
+    width: 93%;
+    font-size: 20px;
+  }
+
+  .article__img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .article__content{
+    width: 90%;
+  }
+
+  .article__text{
+    font-size: 16px;
+  }
+
+  .sns{
+    padding: 50px 0 0 0;
+  }
+
+  .sns__icon{
+    width: 100%;
+  }
+}
