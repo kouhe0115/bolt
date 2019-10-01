@@ -52,7 +52,7 @@ a{
 }
 
 .icon__bolt{
-  color: red;
+  color: #74cfae;
 }
 
 .header__btn{
@@ -166,7 +166,7 @@ a{
   margin-left: 90px;
 }
 
-.section2{
+.section__skills{
   width: 100%;
   padding: 70px 0 100px;
   text-align: center;
@@ -234,7 +234,7 @@ a{
 @media(max-width: 1199px){
 
   .main__content{
-    background-color: red;
+    background-color: #fff;
   }
 
   .inner{
@@ -301,7 +301,7 @@ a{
 /* smart phone */
 @media(max-width: 767px){
   .main__content{
-    background-color: pink;
+    background-color: #fff;
   }
 
   .main__inner{
