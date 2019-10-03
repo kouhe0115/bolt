@@ -149,10 +149,10 @@ img{
   display: inline-block;
   margin: 80px 0  0 100px;
   opacity: 0.7;
+  transition: 0.3s;
 }
 
 .article__img:hover{
-  transition: 0.3s;
   opacity: 1;
 }
 
